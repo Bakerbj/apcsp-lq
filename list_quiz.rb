@@ -1,4 +1,4 @@
-def threeven(list)
+ def threeven(list)
     (list.size - 2).times do |n|
         if list[n] % 2 == 0 && list[n + 1] % 2 == 0 && list[n + 2] % 2 == 0
             return true
@@ -39,3 +39,27 @@ end
 
 puts bigger_two([1, 2], [3, 4])
 puts bigger_two([1, 7], [4, 4])
+
+
+
+def series_up(n)
+    up_array = []
+    final= []
+    total = 0
+    while total < n
+        total = total + 1
+        up_array.push(total)
+    end
+    up_array.size.times do |i|
+        while finishing < i 
+            finishing = finishing + 1
+            final.push(finishing)
+        end
+    end
+
+end
+
+puts series_up(1)
+puts series_up(2)
+puts series_up(3)
+puts series_up(4)
