@@ -1,20 +1,19 @@
-# def threeven(list)
-#     list.each do |n|
-#         if n % 2 == 0 && list[n + 1] % 2 == 0 && list[n + 2] % 2 == 0
-#             return true
-#         end
-#     end
-#     return false
+def threeven(list)
+    (list.size - 2).times do |n|
+        if list[n] % 2 == 0 && list[n + 1] % 2 == 0 && list[n + 2] % 2 == 0
+            return true
+        end
+    end
+    return false
 
-# end
+end
 
 
-# puts threeven([2, 1, 3, 5])
-# puts threeven([2, 4, 12, 5])
-# puts threeven([2, 1, 4, 6])
-# puts threeven([1, 4 ,6, 4])
-#puts threeven([])
-
+puts threeven([2, 1, 3, 5])
+puts threeven([2, 4, 12, 5])
+puts threeven([2, 1, 4, 6]) #does not like a fourth even number with odd before it?
+puts threeven([1, 4 ,6, 4])
+puts threeven([])
 
 
 
