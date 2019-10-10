@@ -51,12 +51,13 @@ def series_up(n)
         up_array.push(total)
     end
     up_array.size.times do |i|
-        while finishing < i 
-            finishing = finishing + 1
+        finishing = 0 #had to define a variable
+        while finishing <= i #had to make < or = to, because it would stop before doing the code for the last variable.
+            finishing = finishing + 1            #example of issue above: 3 => 1, 1, 2      4 => 1, 1, 2, 1, 2, 3
             final.push(finishing)
         end
     end
-
+    print final
 end
 
 puts series_up(1)
